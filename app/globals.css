@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cesca-offwhite text-cesca-dark font-sans antialiased;
+}
+
+a,
+button {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cesca-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+}
+
+.container-pad {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-space {
+  @apply py-16 md:py-24;
+}
+
+.accent-label {
+  @apply text-xs font-bold uppercase tracking-[0.15em];
+}
